@@ -22,8 +22,10 @@ a.navbar-brand {
     margin-right: 2em;
 }
 .btn-success{
-    background-color: rgb(255,0,0);
-    margin-right: 2em;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-right: 4em;
 }   
 .content h1{
     padding: 5px;
@@ -31,8 +33,6 @@ a.navbar-brand {
     color:rgb(39, 17, 243);
     font-family: algerian;
 }
-
-
 
 .footer-2 img{
     width:40px;
