@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resgisteration Form</title>
+    <style>
+    /*form styling begins here*/
+body{
+  background: rgb(214, 214, 214);
+} 
+h1.head{
+    text-align: center;
+    color:goldenrod; 
+    text-shadow:3px 3px 5px #b6a9a9;
+}
+form{
+    width: 350px;
+    height: 1670px;
+    background:  rgb(214, 214, 214);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
+    margin: 5% auto;
+}
+input[type=text], input[type=password], input[type=email], input[type=date]{
+	  border:none;
+    border-radius: 1em; 
+    width: 320px;
+    height: 35px;
+    background:  rgb(214, 214, 214);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
+    margin:14px 12px;
+    padding-left:1em; 
+    cursor: auto; 
+}
+h4{
+    padding-top:2em; 
+    padding-left: 1em;
+    color:goldenrod;
+    text-shadow:3px 3px 5px #b6a9a9;
+}
+b{
+    color:goldenrod;
+}
+.keyword{  
+    text-align: center;
+    text-decoration: none; 
+}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus{
+	border: 2px dashed grey
+}
+input[type=checkbox], input[type=radio]{
+	width: 6%; 
+	padding: 12px 28px;
+	box-sizing: border-box;
+	border: 2px dashed goldenrod;
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
+}
+select{
+  width: 320px;
+  height: 35px;
+  background:  rgb(214, 214, 214);
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
+  margin:14px 12px;
+  padding-left:1em; 
+  border: none;
+  cursor: pointer; 
+  
+}
+textarea{
+	width: 90%;
+	height: 150px;
+	padding: 12px 20px;
+	margin-right: 7%;
+	margin-left: 3%;
+	border-radius: 1em;
+	resize: none;
+}
+input[type=submit], [type=reset]{
+	width: 30%;
+	padding: 16px 30px;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-decoration: none;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	cursor: pointer;
+	background-color: goldenrod;
+	color: whitesmoke;
+	border:none;
+	border-radius: 2em;
+	font-size: 1.5em;
+}
+.tabs{
+    width: 100%
+}
+.sub{
+    float: right; 
+    text-align: center;
+}
+
+.rest{
+    float left;
+  
+}
+button{
+    width: 100px;
+    height: 40px;
+    background: gray;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
+    margin:30px 10px 10px 10px;
+    padding-left:1em; 
+    cursor: pointer;   
+}
+p{
+  color: goldenrod;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+
+h5 a{
+    color: goldenrod;
+    text-decoration:none;
+    margin-top:5em;
+    margin-left:2em; 
+    text-shadow:3px 3px 5px #b6a9a9;
+}
+</style>
+</head>
+<body>
+    
+
+    <form method="" action="">
+        <h1 class="head">Jimmyblaq Empire Registeration Form</h1>
+       <h4> Name: </h4>
+     <input type="text" name" placeholder="Full Name"> 
+
+    <h4> Email: </h4> 
+    <input type="email" name" placeholder="Email"> 
+
+    <h4> Password: </h4>  
+    <input type="password"name" placeholder="Password">
+
+  <hr>  
+    <h4> Gender: </h4>   
+    <input type="radio" name" value="male">Male 
+    <input type="radio" name" placeholder="female">Female<br><br>
+<hr>
+    <h4> Marital status: </h4>    
+               <input type="checkbox" name="" value="Married">Married
+               <input type="checkbox" name="" value="Single">Single
+               <input type="checkbox" name="" value="Divorce">Divorce
+               <input type="checkbox" name="" value="Widow">Widow<br>
+               <input type="checkbox" name="" value="Complicated">Complicated
+               <input type="checkbox" name="" value="Seperated">Seperated
+               <input type="checkbox" name="" value="Entagled">Entagled
+               <br><br><hr>
+
+     <h4>Skin colour: </h4>    
+            <select>
+               <option value="Black"> Black</option>
+               <option value="White"> White</option>
+               <option value="Yellow"> Yellow</option>
+               <option value="Brown"> Brown</option>
+            </select>
+            <br><br>
+
+    <h4>DOB: </h4>  
+    <input type="date">
+    <br><br>
+
+  <b><h4 class="keyword">Any More Information</h4> </b>
+
+  <textarea name="" rows="10" cols="50" wrap>
+  </textarea>
+  <br><br><br>
+
+<div class="tabs">
+  <button class="sub" type="submit"><p>Register</p></button> 
+  <button class="rest" type="fixed"><p>Reset</p></button>
+</div>
+     <div>
+      <h5>
+        <br>
+        <br>
+        <a href="file:///C:/Users/JIMMYBLAQ/Desktop/MY%20PERSONAL%20WEBSITE%20PROJECT/jimmyblaq10/jimmo.html">Return to Home page</a>
+      </h5>
+</div>            
+    </form>
+</body>
+</html>
