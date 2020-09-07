@@ -8,15 +8,16 @@
     /*form styling begins here*/
 body{
   background: rgb(214, 214, 214);
+  color:rgb(10, 21, 90); 
 } 
 h1.head{
     text-align: center;
-    color:goldenrod; 
+    color:rgb(10, 21, 90);
     text-shadow:3px 3px 5px #b6a9a9;
 }
 form{
-    width: 350px;
-    height: 1670px;
+    width: 370px;
+    height: 1830px;
     background:  rgb(214, 214, 214);
     border-radius: 10px;
     box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
@@ -26,7 +27,7 @@ input[type=text], input[type=password], input[type=email], input[type=date]{
 	  border:none;
     border-radius: 1em; 
     width: 320px;
-    height: 35px;
+    height: 40px;
     background:  rgb(214, 214, 214);
     outline: none;
     border-radius: 20px;
@@ -38,12 +39,10 @@ input[type=text], input[type=password], input[type=email], input[type=date]{
 h4{
     padding-top:2em; 
     padding-left: 1em;
-    color:goldenrod;
+    color:rgb(10, 21, 90);
     text-shadow:3px 3px 5px #b6a9a9;
 }
-b{
-    color:goldenrod;
-}
+
 .keyword{  
     text-align: center;
     text-decoration: none; 
@@ -79,7 +78,8 @@ textarea{
 	margin-right: 7%;
 	margin-left: 3%;
 	border-radius: 1em;
-	resize: none;
+  resize: none;
+  border-color:rgb(10, 21, 90);
 }
 input[type=submit], [type=reset]{
 	width: 30%;
@@ -105,13 +105,14 @@ input[type=submit], [type=reset]{
 }
 
 .rest{
-    float left;
-  
+    float :left;
+    text-align: center;
+    padding-left:7px;
 }
 button{
     width: 100px;
     height: 40px;
-    background: gray;
+    background:rgb(10, 21, 90);
     border:none;
     outline: none;
     border-radius: 20px;
@@ -121,18 +122,40 @@ button{
     cursor: pointer;   
 }
 p{
-  color: goldenrod;
+  color:rgb(250, 250, 253);
   font-style: italic;
   font-weight: bolder;
 }
+hr{
+  height: 1px;
+  background-color:rgb(13, 31, 149);
+}
+select{
+  color: rgb(13, 31, 149);
+}
 
-
+h5{
+    text-align: left;
+    margin-top: 5em;
+}
 h5 a{
-    color: goldenrod;
+    color: rgb(10, 21, 90);
     text-decoration:none;
-    margin-top:5em;
-    margin-left:2em; 
-    text-shadow:3px 3px 5px #b6a9a9;
+    text-shadow:3px 3px 5px #b6a9a9;   
+}
+::-webkit-datetime-edit { padding: 1em; }
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
+fieldset{
+  border-color:rgb(10, 21, 90);
+}
+::placeholder {
+  color: rgb(0, 13, 97);
+  font-family:monotype cursiva;
+  font-weight:bold;
 }
 </style>
 </head>
@@ -149,12 +172,21 @@ h5 a{
 
     <h4> Password: </h4>  
     <input type="password"name" placeholder="Password">
-
-  <hr>  
+<br>
+<br>
+<fieldset>
+  <hr> 
+  <legend>Tick your gender</legend> 
     <h4> Gender: </h4>   
     <input type="radio" name" value="male">Male 
     <input type="radio" name" placeholder="female">Female<br><br>
-<hr>
+  <hr> 
+</fieldset> 
+<br>
+<br>
+<fieldset>
+  <hr>
+  <legend>Tick your marital status</legend>
     <h4> Marital status: </h4>    
                <input type="checkbox" name="" value="Married">Married
                <input type="checkbox" name="" value="Single">Single
@@ -164,7 +196,7 @@ h5 a{
                <input type="checkbox" name="" value="Seperated">Seperated
                <input type="checkbox" name="" value="Entagled">Entagled
                <br><br><hr>
-
+</fieldset>
      <h4>Skin colour: </h4>    
             <select>
                <option value="Black"> Black</option>
@@ -178,7 +210,7 @@ h5 a{
     <input type="date">
     <br><br>
 
-  <b><h4 class="keyword">Any More Information</h4> </b>
+  <b><h4 class="keyword">Message (Any More Information)</h4> </b>
 
   <textarea name="" rows="10" cols="50" wrap>
   </textarea>
@@ -188,11 +220,12 @@ h5 a{
   <button class="sub" type="submit"><p>Register</p></button> 
   <button class="rest" type="fixed"><p>Reset</p></button>
 </div>
-     <div>
+<br>
+<br>
+<br>
+<div>
       <h5>
-        <br>
-        <br>
-        <a href="https://jimmyblaq10.github.io/boot.html">Return to Home page</a>
+       <a href="file:///E:/Mr%20Usman's%20Assignment/loginpage.html">Login from here</a>
       </h5>
 </div>            
     </form>
