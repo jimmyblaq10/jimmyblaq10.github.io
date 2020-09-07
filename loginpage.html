@@ -3,66 +3,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login_page</title>
-    <style>
-       body{
-           margin:0;
-           padding:0;
-           background: url(https://jimmyblaq10.github.io/tim.jpg);
-           background-repeat: no-repeat;
-           background-size:cover;
-       } 
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="styleshhet">
+<style>
+    body{
+        background: rgb(214, 214, 214)
+    }
     .box{
-        width: 250px;
-        height: 360px;
-        background:  rgba(248, 30, 30, 0.075);
+        width: 370px;
+        height: 530px;
+        background:  rgb(214, 214, 214);
         border-radius: 10px;
-        box-shadow: 5px 5px 10px #83121298, -5px -5px 10px rgba(165, 10, 10, 0.356);
-        margin: 15% auto;
+        box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
+        margin: 5% auto;
     }
     .box form h1{
         text-align: center;
-        text-shadow:3px 3px 5px #e01010;
+        text-shadow:3px 3px 5px #b6a9a9;
+        color:rgb(10, 21, 90);
+    }
+    img{
+        width:80px;
+        height:60px;
+        margin-left:140px;
     }
     .box input{
-        width: 218px;
+        width: 270px;
         height: 35px;
-        background:  rgba(248, 30, 30, 0.075);
+        background:  rgb(214, 214, 214);
         border: none;
         outline: none;
         border-radius: 20px;
-        box-shadow: 5px 5px 10px #83121286, -5px -5px 10px rgba(165, 10, 10, 0.356);
+        box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
         margin:14px 12px;
-        padding-left:1em;    
+        padding-left:1em;
+        margin-top:20px;    
     }
-    
     .box button{
-        width: 224px;
+        width: 290px;
         height: 35px;
-        background: #39c;
+        background-color:rgb(10, 21, 90);
+        color: #eee;
         border:none;
         outline: none;
         border-radius: 20px;
-        box-shadow: 5px 5px 10px #8312124d, -5px -5px 10px rgba(165, 10, 10, 0.356);
-        margin:14px 10px;
-        padding-left:1em;    
+        box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
+        margin:7px 10px;
+        padding-left:1em;
+        margin-left:70px;    
     }
     a{
-     text-decoration:none;
-     margin-left:0.5em; 
+        text-decoration:none;
+        color:rgb(10, 21, 90);
+        margin-left: 0.5em; 
     }
-    </style>
+    .input-container {
+        display:flex;
+        margin-bottom: 10px;  
+    }  
+    i{
+        color: rgb(10, 21, 90);
+        min-width: 30px;
+        text-align: center;
+        border-radius:20px;
+        margin-left: 1em;
+        margin-top:20px;
+        box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
+        outline: none;
+        padding:12px;
+      }
+      .input-field {
+        width: 100%;
+        padding:10px;
+      } 
+      ::-webkit-input-placeholder { /* Edge */
+        color:rgb(5, 13, 63);
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgb(5, 13, 63);
+      }
+      
+      ::placeholder {
+        color: rgb(0, 13, 97);
+        font-family:monotype cursiva;
+        font-weight:bold;
+      }
+</style> 
 </head>
 <body>
-    <div class="box">
-        <form>
-        <br>
-           <h1>JIMMYBLAQ LOG IN</h1>
-           <input type="email" placeholder="Email">
-           <input type="password" placeholder="Password">
-           <button type="submit">Login</button>
-        <br>
-        <a href="#">Forgot Password?</a>   
-        </form>
+     <div class="box">
+         <form>
+         <br>
+            <img src="mylogo.png" alt="Mylogo">
+            <h1>JIMMYBLAQ  EMPIRE <br> Login Form</h1>
+               
+            <div class="input-container">  
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+            </div>
+
+            <div class="input-container">  
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="email" placeholder="Email">
+            </div>
+
+            <div class="input-container">  
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Password">
+            </div>
+            
+            <button type="submit" onClick="myFunction()">Login</button>
+         <br>
+         <a href="#">Forgot Password?</a>
+         </form>
+    </div>
+     
 </body>
 </html>
+
