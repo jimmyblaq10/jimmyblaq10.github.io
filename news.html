@@ -4,10 +4,11 @@
 	<title>NEWS</title>
 	<meta name="desciption" content="Awesome blog my Jimmyblaq Media">
 	<meta name="Keywords" content="web design blog, web dev blog, Jimmyblaq Media">
+	<link rel="stylesheet" href="./css/style.css">
 	<style type="text/css">
 		#Main-header{
 			text-align:center;
-			background-color:rgb(128, 5, 5);
+			background-color:#e8491d;
 			color:white;
 			padding:10px;
 			box-shadow: 7px 7px 12px #f00808b7, -7px -7px 12px rgba(228, 4, 4, 0.356);
@@ -17,7 +18,7 @@
 		#Main-footer{
 			text-align: center;
 			font-size:18px;
-			background-color:rgb(128, 5, 5);
+			background-color:rgb(#e8491d);
 			color:white;
 			padding:10px;
 			text-shadow:3px 3px 5px #b6a9a9;
@@ -30,17 +31,20 @@
 		}
 		hr{
 		   height: 1px;
-		   background-color: crimson;
+		   background-color:#e8491d;
 		}
-		a{
-		 text-decoration: none;
-		 color: rgb(177, 8, 42);
+		 a{
+		   text-decoration: none;
+		   color:#e8491d;
+		   margin-left:1em;
 		}
-		a:hover{
-		    color:red;
+		 a:hover{
+			color: #090cd8; 
+			
 		}
 		.post{
-		    box-shadow: 7px 7px 12px #b9b7b742, -7px -7px 12px rgba(158, 154, 154, 0.109);	
+			box-shadow: 7px 7px 12px #b9b7b742, -7px -7px 12px rgba(158, 154, 154, 0.109);
+			margin-left:1em;	
 		}
 		body {
 			text-shadow: #fff 0 1px 0;
@@ -52,16 +56,61 @@
 			line-height: normal;
 			background-color:rgb(214, 214, 214);
 		}
+		h3{
+			margin-left:1em;
+			font-family:algerian;
+
+		}
 	</style>
-</head> 
+	
+
+</head>    
 <body>		
-    <header id="Main-header">
-        <h1>NEWS</h1> 
-	</header>
-		<br>
-		<a href="https://jimmyblaq10.github.io/boot.html">Return to Home page</a>
+		<header>
+			<div class="container">
+			  <div id="branding">
+				<h1><span class="highlight">Jimmyblaq</span> Web Design</h1>
+			  </div>
+			  <nav>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="about.html">About</a></li>
+				  <li><a href="services.html">Services</a></li>
+				  <li><a href="facebook.html">portfolio</a></li>
+				  <li class="current"><a href="news.html">Blog Page</a></li>
+				  <li><a href="form.html">SignUp</a></li>
+				  <li><a href="loginpage.html">Login</a></li>
+
+				</ul>
+			  </nav>
+			</div>
+		  </header>
+	
+	  
+		  <section id="showcase">
+			<div class="container">
+			  <h1>Affordable Professional Web Design</h1>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+			</div>
+		  </section>
+	  
+		  <section id="newsletter">
+			<div class="container">
+			  <h1>Subscribe To Our Newsletter</h1>
+			  <form>
+				<input type="email" placeholder="Enter Email...">
+				<button type="submit" class="button_1">Subscribe</button>
+			  </form>
+			</div>
+		  </section>
+	  
+	
+		
+        <header id="Main-header">
+			<h1>NEWS</h1> 
+		</header>
     <section>
-		<hr>
+	
     	<article class="post">
     		<h3><b>New updates on Html and Css work</b></h3>
     		<small>posted by Jimmyblaq on July 21</small>
@@ -145,11 +194,11 @@
          
     <aside>
     	<h3>Related Stories</h3>
-    	  <nav>
+    	  <nav class="special">
     	  	<ul>
     	  		<li><a href="#">Entertainment</a></li>
     	  		<li><a href="#">Social news</a></li>
-			    <li><a href="#">Sports</a></li>
+			    <li><a href="joseph.html">Sports</a></li>
 				<li><a href="#">Education</a></li>
 				<li><a href="#">Religion</a></li>
 				<li><a href="#">Politics</a></li>
@@ -162,6 +211,7 @@
 
     <footer id="Main-footer">
     	<p><marquee>Jimymblaq's blogs.. Copyright &copy; 2020,My Website</marquee></p>
-    </footer> 
+	</footer>
+	<script src="jimmy.js"></script >	   
 </body>
 </html>

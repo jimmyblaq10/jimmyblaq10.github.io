@@ -1,0 +1,173 @@
+body{
+    background-color:rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+/* header styling starts here*/
+header h1{
+    padding:20px;
+    background-color: brown;
+    border-radius:10px;
+    color:white;
+    font-family:monotype cursive;
+    font-size:70px;
+    text-align:center;
+    text-shadow: 5px 5px 5px blue;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    animation:jim 10s 2;
+    animation:esther 7s 1;
+}
+.smallhead{
+    padding:10px;
+    background-color: rgb(124, 8, 8);
+    border-radius:10px;
+    animation:jimmy 7s 2;
+}
+
+@keyframes jim{
+    from{
+        box-shadow:0px 0px 0px brown;
+    }
+    to{
+        box-shadow:10px 10px 10px rgb(138, 18, 18);
+    }
+}
+
+@keyframes esther{
+    from{
+        paddding: 0%; 
+    }
+    to{
+        padding:5%;
+    }
+}
+
+@keyframes jimmy{
+    from{
+        background-color:rgb(252, 159, 53);;
+    }
+    to{
+        background-color:rgb(19, 194, 218);
+    }
+    to{
+        background-color:rgb(16, 5, 75); 
+    }
+    to{
+        background-color:rgb(0, 255, 51);
+    }
+    to{
+        background-color:rgb(123, 255, 106);
+    }
+    to{
+        background-color:rgb(199, 9, 9);
+    }
+    to{
+        background-color:black;
+    }
+    to{
+        background-color:brown;
+    }
+    
+}
+.smallhead header li{
+    list-style: none;
+    display: inline;
+    
+}
+.smallhead header li a{
+   text-decoration:none;
+   color:white;
+   padding:30px;
+   font-family: cursive;
+}
+.smallhead header li a:hover{
+    color:blue;
+}
+/* header styling ends here */
+big{
+    font-family:cursive;
+    font-size:50px;
+}
+#sub{
+    font-size:30px;
+}
+.subhead p{
+    padding:7px;
+    font-weight: bolder;
+}
+span{
+    font-family:cursive;
+    font-size:20px;
+    font-weight: bolder;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+small{
+    font-weight: bolder;
+}
+.img2{
+transform: rotate(0deg);
+box-shadow: black 15px 10px 30px 5px;
+}
+b{
+font-family:cursive;
+font-size:30px;
+font-weight:bolder;
+}
+footer{
+    padding:20px;
+    background-color: brown;
+    border-radius:10px;
+    color:white;
+    font-family:monotype cursive;
+    font-size:70px;
+    text-align:center;
+    text-shadow: 5px 5px 5px blue;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+hr{
+    height:1em;
+    background-color:brown;
+}
+#jim{
+    font-family:cursive;
+    font-weight:bold;
+
+}
+#frank{
+    height:0.2em;
+    width:350px;
+    margin-left:0.2em;
+}
+#jem{
+    color:blue;
+}
+#jem:hover{
+    color:white;
+}
+
+/* phone and tablet styling */
+@media(max-width: 768px){
+   
+    .smallhead header li a{
+        text-decoration:none;
+        color:rgb(255, 255, 255);
+        padding:20px;
+        font-family: cursive;
+     }
+} 
+
+header h1{
+    padding:20px;
+    background-color: brown;
+    border-radius:15px;
+    color:white;
+    font-family:monotype cursive;
+    font-size:70px;
+}
+
+.img2{
+    width:500px;
+    height:400px;
+} 

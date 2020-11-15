@@ -1,3 +1,17 @@
+<?php
+include 'connect.php';
+
+if (isset( $_POST[ 'submit' ]))
+{
+$username = $_POST['username'];
+$secret= $_POST['password'];
+$email = $_POST['email'];
+
+mysqli_query($conn, "INSERT INTO login " . "(username, secret, email) " . "VALUES
+('$username', '$secret', '$email')");
+
+}
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -200,63 +214,23 @@ fieldset{
     </div>
   </section>
 
-    <form method="" action="">
+    <form method="post" action="">
       <img src="./img/mylogo.png" alt="Mylogo">
         <h1 class="head">Jimmyblaq Empire Registeration Form</h1>
-       <h4> Name: </h4>
-     <input class="soso" type="text" name" placeholder="Full Name" name="name" id="name" > 
+       <h4> Username: </h4>
+     <input class="soso" type="text" placeholder="Username" name="username" id="username" > 
 
     <h4> Email: </h4> 
-    <input class="sisi" type="email" name" placeholder="Email" > 
+    <input class="sisi" type="email"  placeholder="Email" name="email" id="email" > 
 
     <h4> Password: </h4>  
-    <input class="simi" type="password"name" placeholder="Password">
+    <input class="simi" type="password" placeholder="Password" name="password" id="password" > 
 <br>
 <br>
-<fieldset>
-  <hr> 
-  <legend>Tick your gender</legend> 
-    <h4> Gender: </h4>   
-    <input type="radio" name" value="male">Male 
-    <input type="radio" name" placeholder="female">Female<br><br>
-  <hr> 
-</fieldset> 
-<br>
-<br>
-<fieldset>
-  <hr>
-  <legend>Tick your marital status</legend>
-    <h4> Marital status: </h4>    
-               <input type="checkbox" name="" value="Married">Married
-               <input type="checkbox" name="" value="Single">Single
-               <input type="checkbox" name="" value="Divorce">Divorce
-               <input type="checkbox" name="" value="Widow">Widow<br>
-               <input type="checkbox" name="" value="Complicated">Complicated
-               <input type="checkbox" name="" value="Seperated">Seperated
-               <input type="checkbox" name="" value="Entagled">Entagled
-               <br><br><hr>
-</fieldset>
-     <h4>Skin colour: </h4>    
-            <select>
-               <option value="Black"> Black</option>
-               <option value="White"> White</option>
-               <option value="Yellow"> Yellow</option>
-               <option value="Brown"> Brown</option>
-            </select>
-            <br><br>
 
-    <h4>DOB: </h4>  
-    <input type="date">
-    <br><br>
-
-  <b><h4 class="keyword">Message (Any More Information)</h4> </b>
-
-  <textarea name="" rows="10" cols="50" wrap>
-  </textarea>
-  <br><br><br>
 
 <div class="tabs">
-  <button class="sub" type="submit"><p>Register</p></button> 
+  <input class="sub" type="submit" name="submit" id="submit" value="Register">
   <button class="rest" type="fixed"><p>Reset</p></button>
 </div>
 <br>

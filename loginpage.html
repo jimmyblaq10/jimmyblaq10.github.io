@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="styleshhet">    
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/all.min.css"> 
+    <link rel="stylesheet" href="./css/style.css">   
 <style>
     body{
         background: rgb(214, 214, 214)
@@ -34,7 +35,7 @@
         border: none;
         outline: none;
         border-radius: 20px;
-        box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #eee;
+        box-shadow: 5px 5px 10px #b6a9a9, inset -5px -5px 10px #eee;
         margin:14px 12px;
         padding-left:1em;
         margin-top:20px;    
@@ -93,33 +94,67 @@
 </style>
 </head>
 <body>
+<header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Jimmyblaq</span> Web Design</h1>
+      </div>
+      <nav>
+        <ul>
+          <li></li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="facebook.html">Portfolio</a></li>
+          <li><a href="news.html">Blog page</a></li>
+          <li><a href="form.html">SignUp</a></li>
+          <li class="current"><a href="loginpage.html">Login</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="showcase">
+    <div class="container">
+      <h1>Affordable Professional Web Design</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+    </div>
+  </section>
+
+  <section id="newsletter">
+    <div class="container">
+      <h1>Subscribe To Our Newsletter</h1>
+    </div>
+  </section>
+
      <div class="box">
-         <form>
+         <form  method="POST" action="login.php">  
          <br>
-            <img src="mylogo.png" alt="Mylogo">
+            <img src="./img/mylogo.png" alt="Mylogo">
             <h1>JIMMYBLAQ  EMPIRE <br> Login Form</h1>
-               
+              
             <div class="input-container">  
                 <i class="fa fa-user icon"></i>
-                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                <input class="input-field" type="text" placeholder="Username" name="username" id="username">
             </div>
 
             <div class="input-container">  
             <i class="fa fa-envelope icon"></i>
-            <input class="input-field" type="email" placeholder="Email">
+            <input class="input-field" type="email" placeholder="Email" name="email" id="email">
             </div>
 
             <div class="input-container">  
             <i class="fa fa-key icon"></i>
-            <input class="input-field" type="password" placeholder="Password">
+            <input class="input-field" type="password" placeholder="Password" name="password" id="password">
             </div>
             
-            <button type="submit" onClick="myFunction()">Login</button>
+            <button type="submit" id="submit" name="submit" value="LOGIN">Login</button> 
          <br>
          <a href="#">Forgot Password?</a>
          </form>
     </div>
-     
+    <footer>
+        <p><marquee>Jimmyblaq Web Deisgn, Copyright &copy; 2020</marquee></p>
+      </footer>
 </body>
 </html>
-
