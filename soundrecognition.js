@@ -51,7 +51,7 @@
  
          
          for(let i of socialMedia){ 
-             if(text.includes(`to ${i}`)){
+             if(text.includes(`to my ${i}`)){
                  window.open(`https://${i}.com`)
      
              }
